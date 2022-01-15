@@ -27,7 +27,7 @@ volatile unsigned char sendMsgBatteryLevelTimer = SEND_MSG_BATT_EVERY;
 //Message max 8 bytes
 struct payload {
 	 unsigned int nrOfPulses;
-	 byte batteryLevel;				 //getVcc 1.0V = 0, 1.8V = 40, 3.3V = 115, 5.0V = 200, 6.0V = 250
+	 byte batteryLevel;				 //getVcc 1.0V=0, 1.8V=40, 3,0V=100, 3.3V=115, 5.0V=200, 6.0V=250
 	 bool doorOpenChanged;
 	 bool doorOpen;
 } payload;
